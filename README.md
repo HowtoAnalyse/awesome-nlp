@@ -19,7 +19,7 @@
 ***
 ## Processing 
   * PySpark processing 
-  * Regular expression [Java]()[python]()[PySpark]()[SQL]()
+  * Regular expression cheat sheet [Java]() / [python]() / [PySpark]() / [SQL]()
 
 #### FAQ
 
@@ -30,27 +30,27 @@
 
 [Back to Top](#contents)
 
-  * Basic math for deep learning[code]()
-  * RNN[code]()[theory]()
-  * Tensorboard[code]()
+  * Basic math for deep learning [code](https://github.com/HowtoAnalyse/awesome-nlp/blob/master/Colab%20Notebooks/deep-learning-math-basics.ipynb)
+  * RNN [code](https://github.com/HowtoAnalyse/awesome-nlp/blob/master/Colab%20Notebooks/RNN.ipynb) [theory]()
+  * Tensorboard [code](https://github.com/HowtoAnalyse/awesome-nlp/blob/master/Colab%20Notebooks/Tensorboard.ipynb)
 
 #### FAQ 
 
-  * Epoch vs. Batch sizes vs. Iterations[theory](https://howtoanalyse.github.io/Epoch-vs.-Batch-sizes-vs.-Iterations/)
+  * Epoch vs. Batch sizes vs. Iterations [theory](https://howtoanalyse.github.io/Epoch-vs.-Batch-sizes-vs.-Iterations/)
 
 ***
 ## Neural architecture search
 
 [Back to Top](#contents)
 
-  * Efficient Neural Architecture Search via Parameter Sharing [code](https://github.com/melodyguan/enas)[theory](https://arxiv.org/pdf/1802.03268.pdf)
+  * Efficient Neural Architecture Search via Parameter Sharing [code](https://github.com/melodyguan/enas) [theory](https://arxiv.org/pdf/1802.03268.pdf)
 
 ***
 ## Model serving 
 
 [Back to Top](#contents)
 
-  * Machine Learning model serving with Java[code](https://github.com/HowtoAnalyse/ml-servers)
+  * Machine Learning model serving with Java [code](https://github.com/HowtoAnalyse/ml-servers)
 
 ***
 ## Pipeline construction 
@@ -58,7 +58,7 @@
 [Back to Top](#contents)
 
 #### Docker and Kubernetes
-  * All the Docker commands I used last week[tutorial](https://medium.com/@bitit1994/all-the-docker-commands-i-used-last-week-474967df067e)
+  * All the Docker commands I used last week [tutorial](https://medium.com/@bitit1994/all-the-docker-commands-i-used-last-week-474967df067e)
 
 #### High performance programming
   * Understanding memory and time usage [tutorial](https://github.com/HowtoAnalyse/ml-servers/tree/master/corenlp)
