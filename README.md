@@ -9,7 +9,7 @@
 ***
 ## Contents
 
- - [Processing](#processing)
+ - [Quantitative Text Analysis](#quantitative-text-analysis)
    - [Linguistic features]
  - [Deep learning with TensorFlow](#deep-learning-with-tensorflow)
  - [Neural architecture search](#neural-architecture-search)
@@ -17,7 +17,11 @@
  - [Pipeline construction](#pipeline-construction)
 
 ***
-## Processing 
+## Quantitative Text Analysis
+  * Tools:
+    * Java: Mallet, Yoshikoder, Lexicoder
+    * R: tm, tidytext, **quanteda**
+    * Python: NLTK, Gensim
   * PySpark processing 
   * Regular expression cheat sheet [Java]() / [python]() / [PySpark]() / [SQL]()
 
