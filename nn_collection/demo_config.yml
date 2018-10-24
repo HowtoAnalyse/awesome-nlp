@@ -1,0 +1,31 @@
+default: &DEFAULT
+  batch_size: 64
+  num_epochs: 1000
+  eval_after_sec: 60
+  model_name: cnn
+  n_words_file: data/demo/n_words.tsv
+  vocab_list_file: data/demo/vocab_list.tsv
+  pad_word: "#=SR=#"
+  max_document_length: 200
+  hidden_units: [24, 16]
+  target_labels: ["pos", "neg"]
+  text_feature_name: "msg"
+  target_name:  "class"
+  weight_column_name: "weight"
+  embedding_size: 200
+  window_size: 3
+  filters: 2
+  learning_rate: 1.0e-4
+  decay_rate: 0.97
+
+
+conv: &largecnn
+  <<: *DEFAULT
+  cell: con2d
+  batch_size: 64
+  num_hidden: 256
+  num_epoch: 1000
+
+conv2:
+  <<: *largecnn
+  window_size: 5
