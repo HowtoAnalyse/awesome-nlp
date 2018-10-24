@@ -1,5 +1,5 @@
-TWITTER_JSON = 'twitter-16.json';
-YOUTUBE_JSON = 'youtube-52.json';
+TWITTER_JSON = 'twitter-5.json';
+YOUTUBE_JSON = 'youtube-48.json';
 
 function parseResult(raw_str) {
     var lstBM = JSON.parse('[' + raw_str.trim().split('\n').join(',') + ']');
@@ -56,10 +56,10 @@ const vm = new Vue({
             'score': 'Score per repeat',
             'start_time': 'Job start',
             'done_time': 'Job Done',
-            'm_mean_accuracy': 'MNIST Accuracy (mean)',
-            'm_std_accuracy': 'MNIST Accuracy (std)',
-            'z_mean_accuracy': 'Fashion Accuracy (mean)',
-            'z_std_accuracy': 'Fashion Accuracy (std)'
+            'm_mean_accuracy': 'Twitter Accuracy (mean)',
+            'm_std_accuracy': 'Twitter Accuracy (std)',
+            'z_mean_accuracy': 'YouTube Accuracy (mean)',
+            'z_std_accuracy': 'YouTube Accuracy (std)'
         },
         col_show_name: {
             'twitter': ['name', 'parameter', 'mean_accuracy', 'std_accuracy',
