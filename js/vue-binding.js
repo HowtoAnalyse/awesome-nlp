@@ -1,5 +1,5 @@
-TWITTER_JSON = 'twitter-5.json';
-YOUTUBE_JSON = 'youtube-48.json';
+TWITTER_JSON = 'cm-55.json';
+YOUTUBE_JSON = 'cm-3.json';
 
 function parseResult(raw_str) {
     var lstBM = JSON.parse('[' + raw_str.trim().split('\n').join(',') + ']');
@@ -14,6 +14,10 @@ function parseResult(raw_str) {
         lstBM[index]['std_accuracy'] = lstBM[index]['std_accuracy'].toFixed(3);
         lstBM[index]['start_time'] = moment(lstBM[index]['start_time'] * 1000).fromNow();
         lstBM[index]['done_time'] = moment(lstBM[index]['done_time'] * 1000).fromNow();
+        lstBM[index]['processor'] = JSON.stringify(lstBM[index]['processor']);
+        lstBM[index]['processor_para'] = JSON.stringify(lstBM[index]['processor_para']);
+        lstBM[index]['topic_model'] = JSON.stringify(lstBM[index]['topic_model']);
+        lstBM[index]['topic_para'] = JSON.stringify(lstBM[index]['topic_para']);
     });
     return lstBM
 }
@@ -49,6 +53,10 @@ const vm = new Vue({
         col_name_desc: {
             'name': 'Name',
             'parameter': 'Parameter',
+            'processor': 'processor',
+            'processor_para': 'processor_para',
+            'topic_model': 'topic_model',
+            'topic_para': 'topic_para',
             'mean_accuracy': 'Accuracy (mean)',
             'std_accuracy': 'Accuracy (std)',
             'time_per_repeat': 'Training time',
@@ -62,10 +70,14 @@ const vm = new Vue({
             'z_std_accuracy': 'YouTube Accuracy (std)'
         },
         col_show_name: {
-            'twitter': ['name', 'parameter', 'mean_accuracy', 'std_accuracy',
-                'time_per_repeat', 'num_repeat', 'start_time', 'done_time'],
-            'youtube': ['name', 'parameter', 'mean_accuracy', 'std_accuracy',
-                'time_per_repeat', 'num_repeat', 'start_time', 'done_time'],
+            'twitter': ['name', 'parameter', 'processor', 'processor_para', 
+            'topic_model', 'topic_para',
+            'mean_accuracy', 'std_accuracy',
+                'time_per_repeat', 'done_time'],
+            'youtube': ['name', 'parameter', 'processor', 'processor_para', 
+            'topic_model', 'topic_para',
+            'mean_accuracy', 'std_accuracy',
+                'time_per_repeat', 'done_time'],
             'merge': ['name', 'parameter', 'z_mean_accuracy', 'm_mean_accuracy', 'z_std_accuracy', 'm_std_accuracy']
         }
     },
